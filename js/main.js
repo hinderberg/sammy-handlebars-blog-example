@@ -59,31 +59,30 @@ myapp.views.people = {
 
 // Jobb på HTML-elementet “#page”. 
 // Her tilsvarer dette hele siden i nettleseren.
-$.sammy("#page",
-    function () {
-        this.use('Handlebars', 'hb');
+$.sammy("#page", function () {
+    this.use('Handlebars', 'hb');
 
 
-        // Definer en route.
-        this.get(/^[^#]*(#\/)?$/, function (context) {
+    // Definer en route.
+    this.get(/^[^#]*(#\/)?$/, function (context) {
 
-            // Gjør et kall mot serveren (evt mot cache).
-            myapp.api.person.all(function (people) {
+        // Gjør et kall mot serveren (evt mot cache).
+        myapp.api.person.all(function (people) {
 
-                // Definer hvilke template-filer som trengs.
-                var template = "templates/person-list.hb";
+            // Definer hvilke template-filer som trengs.
+            var template = "templates/person-list.hb";
 
-// Instansier view-modellen med dataene fra serveren.
-                var viewmodel = myapp.models.create(myapp.views.people, {people:people});
-                viewmodel.init();
+			// Instansier view-modellen med dataene fra serveren.
+            var viewmodel = myapp.models.create(myapp.views.people, {people:people});
+            viewmodel.init();
 
-                // Bytt ut innholdet i “#page” med ny HTML.
-                context.render(template, viewmodel, function (html) {
-                    context.swap(html)
-                });
+            // Bytt ut innholdet i “#page” med ny HTML.
+            context.render(template, viewmodel, function (html) {
+                context.swap(html)
             });
         });
-    }).run();
+    });
+}).run();
 
 
 Handlebars.registerHelper("debug", function (optionalValue) {
