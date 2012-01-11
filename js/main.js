@@ -56,18 +56,6 @@ myapp.views.people = {
     }
 };
 
-Handlebars.registerHelper("debug", function (optionalValue) {
-    console.log("Current Context");
-    console.log("====================");
-    console.log(this);
-
-    if (optionalValue) {
-        console.log("Value");
-        console.log("====================");
-        console.log(optionalValue);
-    }
-});
-
 
 // Jobb på HTML-elementet “#page”. 
 // Her tilsvarer dette hele siden i nettleseren.
@@ -96,3 +84,16 @@ $.sammy("#page",
             });
         });
     }).run();
+
+
+Handlebars.registerHelper("debug", function (optionalValue) {
+    console.log("Current Context");
+    console.log("====================");
+    console.log(this);
+
+    if (optionalValue) {
+        console.log("Value");
+        console.log("====================");
+        console.log(optionalValue);
+    }
+});
