@@ -37,11 +37,6 @@ myapp.api.person = {
     }
 };
 
-// Bruk av API-koden.
-myapp.api.person.all(function (people) {
-// “people” er her et array av person-instanser.     
-});
-
 // Prototype for en view-modell som inneholder people.
 myapp.views.people = {
     init:function () {
