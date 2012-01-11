@@ -67,7 +67,7 @@ Handlebars.registerHelper("debug", function(optionalValue) {
 
 // Jobb på HTML-elementet “#page”. 
 // Her tilsvarer dette hele siden i nettleseren.
-$.sammy("#app-content", function() {
+$.sammy("#page", function() {
 	this.use('Handlebars', 'hb');
 
 
