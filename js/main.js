@@ -13,7 +13,7 @@ $.sammy("#page", function() {
             // Definer hvilken template-filer som trengs.
             var template = "templates/person-list.hb";
 
-			// Instansier view-modellen med dataene fra serveren.
+            // Instansier view-modellen med dataene fra serveren.
             var viewmodel = myapp.models.create(myapp.views.people, {
                 people: people  
             });
