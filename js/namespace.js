@@ -1,0 +1,5 @@
+myapp = {
+    models: {},
+    api:    {},
+    views:  {}
+};

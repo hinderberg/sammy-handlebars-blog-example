@@ -1,7 +1,8 @@
+<p>Here's a list of clickable people:</p>
+
 <div id="content">
-{{debug people}}
 	<ul id="people">
-	{{#each people}}
+	{{#each people }}
 		<li>{{ name }}</li>
 	{{/each}}
 	</ul>
