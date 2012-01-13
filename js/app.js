@@ -14,7 +14,7 @@ $.sammy("#page", function() {
             var template = "template/person-list.hb";
 
             // Instansier view-modellen med dataene fra serveren.
-            var viewmodel = myapp.models.create(myapp.views.people, {
+            var viewmodel = myapp.model.create(myapp.view.people, {
                 people: people  
             });
 

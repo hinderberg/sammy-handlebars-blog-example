@@ -5,25 +5,25 @@ var dummydata = [
 ];
 
 // Prototype for person-instanser.
-myapp.models.person = myapp.models.create(myapp.models.datamodel, {
+myapp.model.person = myapp.model.create(myapp.model.datamodel, {
 
     name: function() {
         return this.firstname + " " + this.lastname;
     }
-    
+
 });
 
 // Metoder for å gjøre kall mot person-API.
 myapp.api.person = {
 
     all: function(callback) {
-        callback(myapp.models.createAll(myapp.models.person, dummydata));
+        callback(myapp.model.createAll(myapp.model.person, dummydata));
     }
 
 };
 
 // Prototype for en view-modell som inneholder personer.
-myapp.views.people = myapp.models.create(myapp.models.viewmodel, {
+myapp.view.people = myapp.model.create(myapp.model.viewmodel, {
     
     compile: function() {
         this.addClickEvents();

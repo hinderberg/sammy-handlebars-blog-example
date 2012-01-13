@@ -1,5 +1,5 @@
 // Prototype for alle view-modeller.
-myapp.models.viewmodel = {
+myapp.model.viewmodel = {
 
     // Kalles når view-modellen skal brukes og returnerer
     // alle variabler som skal kunne hentes fra template-filen.

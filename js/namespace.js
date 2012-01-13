@@ -1,5 +1,5 @@
 myapp = {
-    models: {},
+    model: {},
     api:    {},
-    views:  {}
+    view:  {}
 };
