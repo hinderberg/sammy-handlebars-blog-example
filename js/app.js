@@ -11,7 +11,7 @@ $.sammy("#page", function() {
         myapp.api.person.all(function(people) {
 
             // Definer hvilken template-filer som trengs.
-            var template = "templates/person-list.hb";
+            var template = "template/person-list.hb";
 
             // Instansier view-modellen med dataene fra serveren.
             var viewmodel = myapp.models.create(myapp.views.people, {
