@@ -1,6 +1,6 @@
 myapp = {
     model: {},
-    api:    {},
+    api:   {},
     route: {},
     view:  {}
 };

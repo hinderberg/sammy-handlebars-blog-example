@@ -1,4 +1,5 @@
-  myapp.route.person = function(app) {
+myapp.route.person = function(app) {
+
     // Definer en route.
     app.get("", function (context) {
 
@@ -19,4 +20,5 @@
             });
         });
     });
-}
+
+};

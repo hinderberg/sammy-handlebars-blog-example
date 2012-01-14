@@ -3,7 +3,9 @@ myapp.view.people = myapp.model.create(myapp.model.viewmodel, {
     
     compile: function() {
         this.addClickEvents();
-        return { people: this.people };
+        return { 
+            people: this.people 
+        };
     },
 
     addClickEvents: function() {
