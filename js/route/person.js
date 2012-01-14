@@ -9,12 +9,16 @@ myapp.route.person = function(app) {
             // Definer hvilken template-filer som trengs.
             var template = "template/person-list.hb";
 
-            // Eventuelle partials.
-            var partials = { search: "template/shared/search.hb" };
+              // Eventuelle partials.
+            var partials = { searchbox: "template/shared/searchbox.hb" };
+
+            // Instansierer partial view-modellen
+            var searchbox = myapp.model.create(myapp.view.shared.searchbox);
 
             // Instansier view-modellen med dataene fra serveren.
             var viewmodel = myapp.model.create(myapp.view.people, {
-                people: people  
+                people: people,
+                searchbox : searchbox
             });
 
             // Bytt ut innholdet i “#page” med ny HTML.
@@ -23,5 +27,4 @@ myapp.route.person = function(app) {
             }, partials);
         });
     });
-
 };

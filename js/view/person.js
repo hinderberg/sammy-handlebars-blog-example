@@ -3,8 +3,10 @@ myapp.view.people = myapp.model.create(myapp.model.viewmodel, {
     
     compile: function() {
         this.addClickEvents();
+        var partial = this.compilePartial();
         return { 
-            people: this.people 
+            people: this.people,
+            partial: partial
         };
     },
 

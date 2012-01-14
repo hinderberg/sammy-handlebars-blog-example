@@ -2,5 +2,7 @@ myapp = {
     model: {},
     api:   {},
     route: {},
-    view:  {}
+    view:  {
+		shared: {}
+	},
 };

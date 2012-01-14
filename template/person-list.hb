@@ -1,4 +1,4 @@
-<p>Here's a list of clickable people:</p>
+<p>Here's a list of clickable people with a searchbox:</p>
 
 <div id="content">
 	<ul id="people">
@@ -8,4 +8,4 @@
 	</ul>
 </div>
 
-{{>search}}
+{{>searchbox}}
