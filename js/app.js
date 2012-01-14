@@ -1,10 +1,10 @@
-// Jobb på HTML-elementet “#page”. 
+/* Jobb på HTML-elementet “#page”. */
 $.sammy("#page", function() {
 
-    // Bruk Handlebars-plugin.
+    /* Bruk Handlebars-plugin. */
     this.use('Handlebars', 'hb');
 
-    // Start routes.
+    /* Start routes. */
     myapp.route.person(this);
 
 }).run();

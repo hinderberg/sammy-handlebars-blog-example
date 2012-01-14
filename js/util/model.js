@@ -1,4 +1,4 @@
-// Metode for å instansiere en modell.
+/* Metode for å instansiere en modell. */
 myapp.model.create = function(prototype, properties) {
 
     var instance = Object.create(prototype);
@@ -9,7 +9,7 @@ myapp.model.create = function(prototype, properties) {
 
 };
 
-// Metode for å lage mange instanser.
+/* Metode for å lage mange instanser. */
 myapp.model.createAll = function(prototype, propertiesList) {
 
     return propertiesList.map(function(properties) {

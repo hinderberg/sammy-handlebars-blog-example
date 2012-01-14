@@ -1,4 +1,4 @@
-// Object.create() for nettlesere som ikke implementerer denne selv.
+/* Object.create() for nettlesere som ikke implementerer denne selv. */
 if (!Object.create) {
     Object.create = function (o) {
         if (arguments.length > 1) {

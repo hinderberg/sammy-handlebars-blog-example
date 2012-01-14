@@ -1,4 +1,4 @@
-// Prototype for en view-modell som inneholder personer.
+/* Prototype for en view-modell som inneholder personer. */
 myapp.view.people = myapp.model.create(myapp.model.viewmodel, {
     
     compile: function() {
