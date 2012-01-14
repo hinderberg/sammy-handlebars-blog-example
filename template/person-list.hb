@@ -7,3 +7,5 @@
 	{{/each}}
 	</ul>
 </div>
+
+{{>search}}
