@@ -1,2 +1,4 @@
-// Prototype for alle data-modeller.
+/*
+ * Prototype for all data models.
+ */ 
 myapp.model.datamodel = {};

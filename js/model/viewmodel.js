@@ -1,22 +1,21 @@
-// Prototype for alle view-modeller.
+/*
+ * Prototype for all view models.
+ */ 
 myapp.model.viewmodel = {
 
-    // Kalles når view-modellen skal brukes og returnerer
-    // alle variabler som skal kunne hentes fra template-filen.
-    compile: function() {
-        throw "Compile method not implementet in this view model.";
-    },
+    /*
+     * Compile a view model to use it in a template.
+     *
+     * This method should return all the variables which can be 
+     * used in the template file of the view model. 
+     */ 
+    compile: function() {},
 
-	compilePartial: function () {
-		var partial = {};
-
-		for(var key in this) {
-			if(typeof this[key].compile === 'function') {
-				partial[key] = this[key].compile();
-			}
-		}
-
-		return partial;
-	}
-
+    /*
+     * Apply the view model to the rendered template.
+     *
+     * This method is called after the template has been rendered.
+     */ 
+    apply: function() {}
+    
 };

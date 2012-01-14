@@ -1,4 +1,5 @@
-// Object.create() for nettlesere som ikke implementerer denne selv.
+// Cross-browser Object.create
+// https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/create
 if (!Object.create) {
     Object.create = function (o) {
         if (arguments.length > 1) {
