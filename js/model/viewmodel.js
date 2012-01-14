@@ -1,20 +1,15 @@
-/*
- * Prototype for all view models.
- */ 
+/* Prototype for alle view-modeller. */
 myapp.model.viewmodel = {
 
     /*
-     * Compile a view model to use it in a template.
-     *
-     * This method should return all the variables which can be 
-     * used in the template file of the view model. 
+     * Kompiler en view-modell for å bruke den i et template.
+     * Returnerer alle variabler som skal kunne brukes i template-filen.
      */ 
     compile: function() {},
 
     /*
-     * Apply the view model to the rendered template.
-     *
-     * This method is called after the template has been rendered.
+     * Kalles etter template-filen har blitt renderet. 
+     * Her legges hver view-modells DOM-mainpulasjon. 
      */ 
     apply: function() {}
     

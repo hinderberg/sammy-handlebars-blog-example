@@ -1,15 +1,15 @@
-// Work on the "#page" HTML-element.
+/* Jobb på HTML-elementet “#page”. */
 $.sammy("#page", function() {
-    
-    // Use the Handlebars plugin.
+
+    /* Bruk Handlebars-plugin. */
     this.use('Handlebars', 'hb');
 
-    // Start routes.
+    /* Start routes. */
     myapp.route.person(this);
 
     this.helpers({
 
-        // A helper to make rendering with many view-models easier.
+        /* En hjelpefunksjon for å rendre sider med mange view-modeller. */
         renderAll: function(template, partials, models) {
             var context = this;
             context.render(template, myapp.model.compileAll(models), function(html) {
