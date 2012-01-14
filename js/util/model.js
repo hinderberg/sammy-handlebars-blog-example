@@ -10,7 +10,7 @@ myapp.model.createAll = function(prototype, propertiesList) {
     });
 };
 
-/* Kompiler et array av view-modeller. */
+/* Kompiler en liste av view-modeller. */
 myapp.model.compileAll = function(models) {
     var compiled = {};
     models.forEach(function(model) {
@@ -19,7 +19,7 @@ myapp.model.compileAll = function(models) {
     return compiled;
 };
     
-/* Kjør apply-metodene til et array av view-modeller. */
+/* Kjør apply-metodene til en liste av view-modeller. */
 myapp.model.applyAll = function(models) {
     models.forEach(function(model) {
         model.apply();
