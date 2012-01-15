@@ -1,3 +1,5 @@
+{{>searchbox}}
+
 <p>Her er en liste med klikkbare navn:</p>
 
 <div id="content">
@@ -8,4 +10,3 @@
 	</ul>
 </div>
 
-{{>searchbox}}
