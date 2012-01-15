@@ -1,4 +1,4 @@
-myapp = {
+window.myapp = {
     model: {},
     api:   {},
     route: {},
