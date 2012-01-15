@@ -1,6 +1,5 @@
 <hr>
-<p>This is a partial:</p>
+<p>Dette er en partial:</p>
 <div id="searchbox">
-	<input type="text" id="search-input" name="search" value="" />
-	<button id="search-button">Search</button>
+	<input type="text" id="search-input" name="search" value="" placeholder="Søk.." />
 </div>

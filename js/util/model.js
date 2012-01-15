@@ -33,5 +33,6 @@ myapp.model.merge = function(o1, o2) {
             o1[key] = o2[key];
         }
     }
+
     return o1;
 };

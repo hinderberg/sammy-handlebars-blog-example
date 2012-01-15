@@ -1,4 +1,4 @@
-<p>Here's a list of clickable people:</p>
+<p>Her er en liste med klikkbare navn:</p>
 
 <div id="content">
 	<ul id="people">
